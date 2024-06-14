@@ -1,0 +1,9 @@
+services:
+    php-cli:
+        build:
+            context: .
+            dockerfile: ./docker/php-cli/Dockerfile
+        tty: true
+        volumes:
+            - .:/var/www/html
+        working_dir: /var/www/html
